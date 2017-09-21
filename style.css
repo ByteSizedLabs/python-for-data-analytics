@@ -70,7 +70,6 @@ menu li:hover {
 }
 menu div {
 	margin-top: 0.5em;
-	margin-bottom: 1.5em;
 }
 
 menu div a{
@@ -78,7 +77,7 @@ menu div a{
 }
 
 menu ul {
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 }
 section {
 	display: inline-block;
@@ -102,7 +101,7 @@ section ul li {
 }
 
 #logo {
-	width: 30%;
+	width: 40%;
 	height: auto;
 	margin-bottom: 1em;
 }
