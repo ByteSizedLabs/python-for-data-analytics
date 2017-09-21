@@ -34,16 +34,6 @@ $(document).ready(function () {
         instructions: ['Print "Hello World !!!" to the console'],
         solution: ['print("Hello World !!!")']
     }, {
-        name: 'Variables I',
-        type: 'diy',
-        instructions: ['We can define variables like so:'],
-        solution: ['byte_name = "Python for Data Analytics"','language = "Python"','location = "Philadelphia"']
-    }, {
-        name: 'Variables II',
-        type: 'diy',
-        instructions: ["We can print variables like so:"],
-        solution: ['print(byte_name) # "Python for Data Analytics"','print(language) # "Python"','print(location)  # "Philadelphia"']
-    }, {
         name: '',
         type: 'diy',
         instructions: [""],

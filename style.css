@@ -69,15 +69,16 @@ menu li:hover {
 	opacity: 0.8;
 }
 menu div {
-	margin-top: 1.5em;
-}
-
-menu div h2 {
-	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
 }
 
 menu div a{
 	display: block;
+}
+
+menu ul {
+	margin-bottom: 2em;
 }
 section {
 	display: inline-block;
@@ -119,6 +120,15 @@ section ul li {
 	display: none;
 	display:table;
 	margin:0 auto;
+}
+
+#downloads{
+	display: flex;
+}
+
+.download{
+	margin-left: 2em;
+    flex-grow: 1;
 }
 
 .master {
