@@ -1,15 +1,43 @@
+let showSolution = function () {
+    return function () {
+        $('.solution').show()
+    }
+}
+
+let addItem = function (itemCount, item) {
+    //Adds in an element to the menu list and section
+    let listID = (item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount
+        , divID = ((item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount) + '-section'
+        , title = '<h2>' + ((item.name.length == 0) ? ((item.type == 'diy') ? 'DIY ' + itemCount : 'Challenge #' + itemCount) : item.name) + '</h2>'
+        , instructions = ''
+        , solution = '';
+    //Make the list of instructions
+    for (let i in item.instructions) {
+        instructions += '<li>' + item.instructions[i] + '</li>';
+    }
+
+    //Make the list of solutions
+    for (let i in item.solution) {
+        solution += item.solution[i];
+    }
+
+    //Insert into the DOC
+    $('menu ul').append('<li id="' + listID + '" class="">' + title + '</li>');
+    $('section').append('<div id="' + divID + '">' + title + '<ul>' + instructions + '</ul><a href="#" onClick = "showSolution()()" class = "solution_button">Show solution!</a><p class="solution">' + solution + '</p></div>');
+}
+
 $(document).ready(function () {
 
     let list = [{
-        name: '',
+        name: 'Hello World!',
         type: 'diy',
-        instructions: ["these are instructions"],
-        solution: ["this is the solution"]
+        instructions: ['Print "Hello World !!!" to the console'],
+        solution: ['print("Hello World !!!")']
     }, {
         name: '',
         type: 'diy',
-        instructions: [""],
-        solution: [""]
+        instructions: ["hello"],
+        solution: ["another solution"]
     }, {
         name: '',
         type: 'diy',
@@ -96,29 +124,7 @@ $(document).ready(function () {
         let divID = $(this).attr('id') + '-section'; //Get relevant ID
         $('section div').hide();
         $('#' + divID).show();
+        $('.solution').hide();
     });
-
-    function addItem(itemCount, item) {
-        //Adds in an element to the menu list and section
-        let listID = (item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount
-            , divID = ((item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount) + '-section'
-            , title = '<h2>' + ((item.name.length == 0) ? ((item.type == 'diy') ? 'DIY ' + itemCount : 'Challenge #' + itemCount) : item.name) + '</h2>'
-            , instructions = '';
-            //, solution = '';
-        //Make the list of instructions
-        for (let i in item.instructions) {
-            instructions += '<li>' + item.instructions[i] + '</li>';
-        }
-
-        //Make the list of solutions
-        //for (let i in item.solution) {
-          //  solutions += '<li>' + item.solution[i] + '</li>';
-        //}
-
-
-        //Insert into the DOC
-        $('menu ul').append('<li id="' + listID + '" class="">' + title + '</li>');
-        $('section').append('<div id="' + divID + '">' + title + '<ul>' + instructions + '</ul></div>');
-    }
 
 });
