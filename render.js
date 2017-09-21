@@ -23,7 +23,7 @@ let addItem = function (itemCount, item) {
 
     //Insert into the DOC
     $('menu ul').append('<li id="' + listID + '" class="">' + title + '</li>');
-    $('section').append('<div id="' + divID + '">' + title + '<ul>' + instructions + '</ul><a href="#" onClick = "showSolution()()" class = "solution_button">Show solution!</a><p class="solution">' + solution + '</p></div>');
+    $('section').append('<div id="' + divID + '">' + title + '<ul>' + instructions + '</ul><a href="#" onClick = "showSolution()()" class = "solution_button">Show solution!</a>' + solution + '</div>');
 }
 
 $(document).ready(function () {
@@ -32,52 +32,52 @@ $(document).ready(function () {
         name: 'Hello World',
         type: 'challenge',
         instructions: ['Print "Hello World !!!" to the console'],
-        solution: ['print("Hello World !!!")']
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'diy',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'diy',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'challenge',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'diy',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'diy',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'diy',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'diy',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'diy',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     }, {
         name: '',
         type: 'challenge',
         instructions: [""],
-        solution: [""]
+        solution: ['<img class = "solution" src="test.png" alt="test">']
     },
 
 

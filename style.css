@@ -114,11 +114,10 @@ section ul li {
 }
 
 .solution{
-	text-align: left;
-	font-family: "Courier New";
-	display: none;
-	display:table;
-	margin:0 auto;
+	width: 80%;
+	height: auto;
+	display: block;
+    margin: 0 auto;
 }
 
 #downloads{
