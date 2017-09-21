@@ -1,40 +1,10 @@
 $(document).ready(function () {
 
-    let diyList = [{
+    let list = [{
         name: '',
         type: 'diy',
-        instructions: [""],
-        solution: [""]
-    },{
-        name: '',
-        type: 'diy',
-        instructions: [""],
-        solution: [""]
-    }, {
-        name: '',
-        type: 'diy',
-        instructions: [""],
-        solution: [""]
-    }, {
-        name: '',
-        type: 'diy',
-        instructions: [""],
-        solution: [""]
-    }, {
-        name: '',
-        type: 'diy',
-        instructions: [""],
-        solution: [""]
-    }, {
-        name: '',
-        type: 'challenge',
-        instructions: [""],
-        solution: [""]
-    }, {
-        name: '',
-        type: 'diy',
-        instructions: [""],
-        solution: [""]
+        instructions: ["these are instructions"],
+        solution: ["this is the solution"]
     }, {
         name: '',
         type: 'diy',
@@ -60,8 +30,38 @@ $(document).ready(function () {
         type: 'challenge',
         instructions: [""],
         solution: [""]
-    }, 
-    
+    }, {
+        name: '',
+        type: 'diy',
+        instructions: [""],
+        solution: [""]
+    }, {
+        name: '',
+        type: 'diy',
+        instructions: [""],
+        solution: [""]
+    }, {
+        name: '',
+        type: 'diy',
+        instructions: [""],
+        solution: [""]
+    }, {
+        name: '',
+        type: 'diy',
+        instructions: [""],
+        solution: [""]
+    }, {
+        name: '',
+        type: 'diy',
+        instructions: [""],
+        solution: [""]
+    }, {
+        name: '',
+        type: 'challenge',
+        instructions: [""],
+        solution: [""]
+    },
+
 
 
     ];
@@ -76,14 +76,14 @@ $(document).ready(function () {
 	*/
 
     //Add the DIY and Challenges
-    let diyCount = 1
-        , chalCount = 1;
-    for (let d in diyList) {
-        if (diyList[d].type == 'diy') {
-            addDIY(diyCount, diyList[d]);
+    let diyCount = 1, chalCount = 1, downloadCount = 1;
+
+    for (let item in list) {
+        if (list[item].type == 'diy') {
+            addItem(diyCount, list[item]);
             diyCount++;
-        } else if (diyList[d].type == 'challenge') {
-            addDIY(chalCount, diyList[d]);
+        } else if (list[item].type == 'challenge') {
+            addItem(chalCount, list[item]);
             chalCount++;
         }
     }
@@ -98,16 +98,24 @@ $(document).ready(function () {
         $('#' + divID).show();
     });
 
-    function addDIY(diyNum, diy) {
+    function addItem(itemCount, item) {
         //Adds in an element to the menu list and section
-        let listID = (diy.type == 'diy') ? 'diy' + diyNum : 'chal' + diyNum
-            , divID = ((diy.type == 'diy') ? 'diy' + diyNum : 'chal' + diyNum) + '-section'
-            , title = '<h2>' + ((diy.name.length == 0) ? ((diy.type == 'diy') ? 'DIY ' + diyNum : 'Challenge #' + diyNum) : diy.name) + '</h2>'
+        let listID = (item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount
+            , divID = ((item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount) + '-section'
+            , title = '<h2>' + ((item.name.length == 0) ? ((item.type == 'diy') ? 'DIY ' + itemCount : 'Challenge #' + itemCount) : item.name) + '</h2>'
             , instructions = '';
+            //, solution = '';
         //Make the list of instructions
-        for (let i in diy.instructions) {
-            instructions += '<li>' + diy.instructions[i] + '</li>';
+        for (let i in item.instructions) {
+            instructions += '<li>' + item.instructions[i] + '</li>';
         }
+
+        //Make the list of solutions
+        //for (let i in item.solution) {
+          //  solutions += '<li>' + item.solution[i] + '</li>';
+        //}
+
+
         //Insert into the DOC
         $('menu ul').append('<li id="' + listID + '" class="">' + title + '</li>');
         $('section').append('<div id="' + divID + '">' + title + '<ul>' + instructions + '</ul></div>');
