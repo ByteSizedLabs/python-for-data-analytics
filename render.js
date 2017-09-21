@@ -32,7 +32,7 @@ $(document).ready(function () {
         name: 'Hello World',
         type: 'challenge',
         instructions: ['Print "Hello World !!!" to the console'],
-        solution: ['<img class = "solution" src="test.png" alt="test">']
+        solution: ['<img class = "solution" src="solution_images/challenge/challenge_0.png" alt="Challenge1">']
     }, {
         name: '',
         type: 'diy',
