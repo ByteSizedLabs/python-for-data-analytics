@@ -114,9 +114,11 @@ section ul li {
 }
 
 .solution{
-	text-align: center;
+	text-align: left;
 	font-family: "Courier New";
 	display: none;
+	display:table;
+	margin:0 auto;
 }
 
 .master {

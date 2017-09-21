@@ -18,7 +18,7 @@ let addItem = function (itemCount, item) {
 
     //Make the list of solutions
     for (let i in item.solution) {
-        solution += item.solution[i];
+        solution += item.solution[i] + '<br>';
     }
 
     //Insert into the DOC
@@ -30,14 +30,14 @@ $(document).ready(function () {
 
     let list = [{
         name: 'Hello World!',
-        type: 'diy',
+        type: 'challenge',
         instructions: ['Print "Hello World !!!" to the console'],
         solution: ['print("Hello World !!!")']
     }, {
-        name: '',
+        name: 'Variables',
         type: 'diy',
-        instructions: ["hello"],
-        solution: ["another solution"]
+        instructions: ['You can define variables like so:'],
+        solution: ['byte_name = "Python for Data Analytics"','language = "Python"','location = "Philadelphia"']
     }, {
         name: '',
         type: 'diy',
