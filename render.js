@@ -29,20 +29,20 @@ let addItem = function (itemCount, item) {
 $(document).ready(function () {
 
     let list = [{
-        name: 'Hello World!',
+        name: 'Hello World',
         type: 'challenge',
         instructions: ['Print "Hello World !!!" to the console'],
         solution: ['print("Hello World !!!")']
     }, {
-        name: 'Variables',
+        name: 'Variables I',
         type: 'diy',
-        instructions: ['You can define variables like so:'],
+        instructions: ['We can define variables like so:'],
         solution: ['byte_name = "Python for Data Analytics"','language = "Python"','location = "Philadelphia"']
     }, {
-        name: '',
+        name: 'Variables II',
         type: 'diy',
-        instructions: [""],
-        solution: [""]
+        instructions: ["We can print variables like so:"],
+        solution: ['print(byte_name) # "Python for Data Analytics"','print(language) # "Python"','print(location)  # "Philadelphia"']
     }, {
         name: '',
         type: 'diy',
