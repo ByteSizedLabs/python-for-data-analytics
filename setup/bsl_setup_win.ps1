@@ -19,7 +19,7 @@ else
    {
    # We are not running "as Administrator" - so relaunch as administrator
     $newProcess = New-Object Diagnostics.ProcessStartInfo 'powershell.exe'
-    $newProcess.Arguments = '-ExecutionPolicy RemoteSigned -File "' + $script:MyInvocation.MyCommand.Path + '"'
+    $newProcess.Arguments = '-ExecutionPolicy Bypass -File "' + $script:MyInvocation.MyCommand.Path + '"'
     $newProcess.Verb = 'runas'
     [Diagnostics.Process]::Start($newProcess)
 
