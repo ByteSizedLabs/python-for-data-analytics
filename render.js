@@ -36,22 +36,22 @@ $(document).ready(function () {
     }, {
         name: 'DIY 1 - Let me tell you something',
         type: 'diy',
-        instructions: ['Create a new file in day1 directory called "questions.py"', 'Write a program that asks the user for their name, age and why they want to learn python', 'Write a print statement combining those strings to make sentences describing the user using concatenation ("+")'],
+        instructions: ['Create a new file in day1 directory called questions.py', 'Write a program that asks the user for their name, age and why they want to learn python', 'Write a print statement combining those strings to make sentences describing the user using concatenation ("+")'],
         solution: ['<img class = "solution" src="solution_images/diy/diy_1.png" alt="diy1">']
     }, {
         name: 'DIY 2 - Types',
         type: 'diy',
-        instructions: ['Create a new file in day1 directory called "types.py"', 'Have the program ask the user for the price of something', 'Convert this string to an int', 'Add a 20% tax to the price', 'Convert the price with tax back to a string', 'Print out the response in a full statement'],
+        instructions: ['Create a new file in day1 directory called types.py', 'Have the program ask the user for the price of something', 'Convert this string to an int', 'Add a 20% tax to the price', 'Convert the price with tax back to a string', 'Print out the response in a full statement'],
         solution: ['<img class = "solution" src="solution_images/diy/diy_2.png" alt="diy2">']
     }, {
         name: 'DIY 3 - If Statements',
         type: 'diy',
-        instructions: ['Create a new file "if_statments.py"', 'Define a float variable "portfolio_returns" that is between 0 and 1', 'Create an if-elif-else statement that prints:', '"My portfolio has very high returns" if the return percent is greater than 12%', '"My portfolio has high returns" if the return percent is greater than 12% but less than 8%', '"My portfolio has bad returns" otherwise'],
+        instructions: ['Create a new file if_statments.py', 'Define a float variable "portfolio_returns" that is between 0 and 1', 'Create an if-elif-else statement that prints:', '"My portfolio has very high returns" if the return percent is greater than 12%', '"My portfolio has high returns" if the return percent is greater than 12% but less than 8%', '"My portfolio has bad returns" otherwise'],
         solution: ['<img class = "solution" src="solution_images/diy/diy_3.png" alt="diy3">']
     }, {
         name: 'Challenge 1 - Buy Buy Buy!',
         type: 'challenge',
-        instructions: ['Create a new file in day1 directory called "buy_stock.py"','Write a program that asks a user for the price of AAPL stock (Apple inc)','In future lessons we’ll show you how your program can get stock information on its own','The price of AAPL stays around $165 but it’s possible to profit off the day-to-day fluctuations','If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
+        instructions: ['Create a new file in day1 directory called buy_stock.py','Write a program that asks a user for the price of AAPL stock (Apple inc)','In future lessons we’ll show you how your program can get stock information on its own','The price of AAPL stays around $165 but it’s possible to profit off the day-to-day fluctuations','If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
         solution: ['<img class = "solution" src="solution_images/challenge/challenge_1.png" alt="challenge1">']
     }, {
         name: 'Challenge 2 - Hospital Efficiency',
