@@ -56,7 +56,7 @@ $(document).ready(function () {
     }, {
         name: 'Challenge 2 - Hospital Efficiency',
         type: 'challenge',
-        instructions: ['You are the operations manager for a major hospital. You’re looking to make your nurses more effective by removing the repetitive tasks they have to do. One such task is calculating how much pain medication to administer a patient. The amount of medication a patient should receive is one tablet for every 50 pounds the patient weighs but never more than 3 tablets.', 'Write a program that asks the patient their weight and returns the number of tablets they should take?'],
+        instructions: ['You are the operations manager for a major hospital. You’re looking to make your nurses more effective by removing the repetitive tasks they have to do. One such task is calculating how much pain medication to administer a patient. The amount of medication a patient should receive is one tablet for every 50 pounds the patient weighs but never more than 3 tablets.', 'Write a program that asks the patient their weight and returns the number of tablets they should take,(in a real-world scenario you would have an IOT device get the patient’s weight and communicate with your program!)'],
         solution: ['<img class = "solution" src="solution_images/challenge/challenge_2.png" alt="challenge2">']
     }, {
         name: 'DIY 4 - Election Analysis',
