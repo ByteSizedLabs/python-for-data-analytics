@@ -125,6 +125,10 @@ section ul li {
 	display: block;
 }
 
+.resource_title{
+	font-weight: 550 ;
+}
+
 .master {
     padding-top: 1rem;
     padding-bottom: 1rem;

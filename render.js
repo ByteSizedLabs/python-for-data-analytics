@@ -8,7 +8,7 @@ let addItem = function (itemCount, item) {
     //Adds in an element to the menu list and section
     let listID = (item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount
         , divID = ((item.type == 'diy') ? 'diy' + itemCount : 'chal' + itemCount) + '-section'
-        , title = '<h2>' + ((item.name.length == 0) ? ((item.type == 'diy') ? 'DIY ' + itemCount : 'Challenge #' + itemCount) : item.name) + '</h2>'
+        , menu_title = '<h2>' + ((item.name.length == 0) ? ((item.type == 'diy') ? 'DIY ' + itemCount : 'Challenge #' + itemCount) : item.name) + '</h2>'
         , instructions = ''
         , solution = '';
     //Make the list of instructions
@@ -92,7 +92,7 @@ $(document).ready(function () {
 	*/
 
     //Add the DIY and Challenges
-    let diyCount = 1, chalCount = 1, downloadCount = 1;
+    let diyCount = 1, chalCount = 0, downloadCount = 1;
 
     for (let item in list) {
         if (list[item].type == 'diy') {
