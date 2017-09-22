@@ -62,7 +62,7 @@ $(document).ready(function () {
         name: 'DIY 4 - Election Analysis',
         type: 'diy',
         instructions: ['Create a new file in day2 election_analytics.py', 'Create a list of 3 presidential candidates from 201', 'Each candidate should be represented as a dictionary with keys for name, money raised, and votes won. (Make them up – doesn’t have to reflect real life)', 'Write a program that calculates and prints out the total number of dollars raised'],
-        solution: ['<img class = "solution" src="solution_images/diy/diy_2.png" alt="diy2">']
+        solution: ['<img class = "solution" src="solution_images/diy/diy_4.png" alt="diy4">']
     }, {
         name: 'Challenge 3 - Buy Real Estate',
         type: 'challenge',
