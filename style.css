@@ -68,17 +68,7 @@ menu li:hover {
 	cursor: pointer;
 	opacity: 0.8;
 }
-menu div {
-	margin-top: 0.5em;
-}
 
-menu div a{
-	display: block;
-}
-
-menu ul {
-	margin-bottom: 1.5em;
-}
 section {
 	display: inline-block;
 	vertical-align: top;
@@ -121,12 +111,18 @@ section ul li {
 }
 
 #downloads{
-	display: flex;
+	display: block;
+	float: right;
+	width: 10em;
+	margin: 2em;
 }
 
 .download{
-	margin-left: 2em;
-    flex-grow: 1;
+	margin-top: 1.5em;
+}
+
+.download a{
+	display: block;
 }
 
 .master {
