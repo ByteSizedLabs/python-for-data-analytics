@@ -1,12 +1,12 @@
 ## 0 - Hello World
 print("Hello World !!!")
 
-## 1 - Define Variables examples
+## 1 - Define Variables 
 byte_name = "Python for Data Analytics" 
 language = "Python"
 location = "Philadelphia"
 
-## 2 - Print Variables examples
+## 2 - Print Variables 
 byte_name = "Python for Data Analytics" 
 language = "Python"
 location = "Philadelphia"
@@ -15,21 +15,21 @@ print(byte_name) # "Python for Data Analytics"
 print(language) # "Python" 
 print(location)  # "Philadelphia"
 
-## 3 - Combining Variables examples
+## 3 - Combining Variables 
 language = "Python"
 location = "Philadelphia"
 
 sentence = "We are learning how to code " + language + ", in " + location
 print(sentence) # "We are learning how to code Python, in Philadelphia"
 
-## 4 - Comments example
+## 4 - Comments
 # This is a variable that stores the day of the week
 day_of_week = "Friday"
 
 # This is another variable that stores the time of day
 time_of_day = "early afternoon"
 
-## 5 - input  example
+## 5 - Input  
 name = input("What is your name? ")
 quest = input("What is your quest? ")
 favorite_color = input("What is your favorite color? ")
@@ -67,9 +67,11 @@ i_will_know_python_soon = i_know_python or (i_will_know_python and i_am_working_
 im_not_learning_python = not i_am_learning_python
 
 ## 9 - More Bools
-bool1 = True and not False
-bool2 = (False or not True) and True
-bool3 = (True and True and False) or not True
+bool1 = True and False
+bool2 = False or True
+bool3 = True and not False
+bool4 = (False or not True) and True
+bool5 = (True and True and False) or not True
 
 ## 10 - If statement
 tickets_to_buy = 3
@@ -278,7 +280,7 @@ for letter in "Python":
 
 ## 29 For Loop range
 for number in range(0, 5):
-	print(number)
+	print(number * 2)
 # 0
 # 1
 # 2
@@ -375,55 +377,75 @@ print(is_even(7)) # False
 print(is_even(0)) # True
 
 ## 38 Functions with arrays
-some_numbers = [12, 7, 14, 1, -456]
-some_even_numbers = []
+senators = [("John McCain", "Republican"), ("Harry Reid", "Democrat"), 
+            ("Chuck Schumer", "Democrat"), ("Lindsey Graham", "Republican"),
+            ("Richard Burr", "Republican"), ("Bernie Sanders", "Independent")]
+republican_senators = []
 
-def is_even(number):
-	return number % 2 == 0
+def is_republican(senator):
+	name, party = senator
+	return party == "Republican"
 
-for number in some_numbers:
-	if is_even(number):
-		some_even_numbers.append(number)
+for senator in senators:
+	if is_republican(senator):
+		republican_senators.append(senator)
 
-print(some_even_numbers) # [12, 14, -456]
+print(republican_senators)
 
-## 39 Reading Files
-with open("data/sherlockholmes.txt", "r") as sherlock_holmes:
+## 39 Scope
+a = "I'm a gloabl variale"
+my_list = ["first", "second", "third"]
+
+for b in my_list:
+	c = "c"
+	print(b)
+
+def tripple(i):
+	d = "d"
+	return 2 * i
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(i)
+
+## 40 Reading Files
+with open("data/sherlockholmes.txt", "r") as sherlock_holmes_file:
 	line_number = 0
-	for line in sherlock_holmes:
+	for line in sherlock_holmes_file:
 		# Print only first 30 lines
 		if line_number < 30:
 			print(line)
 		line_number += 1
 
-
-## 40 Writing Files
+## 41 Writing Files
 with open("data/my_autobiogrpahy.txt", "w") as my_autobiogrpahy:
 	my_autobiogrpahy.write("I was born, a baby.")
 	my_autobiogrpahy.write("A small baby in a big world")
-	my_autobiogrpahy.write("I would never imagine one day i would become the worlds greatest detective...")
+	my_autobiogrpahy.write("I would never imagine one day I would become the worlds greatest detective...")
 
-## 41 Import Modules
+## 42 Import Modules
 import requests
 from statistics import mean, median, stdev
 
 requests.get("http://www.bytesizedlabs.com/data")
 
-print(median([10, 400, 3.6, 24])) # 17.0
+print(statistics.median([10, 400, 3.6, 24])) # 17.0
 
-## 42 API
+## 43 API
 import requests
 
 group_id = 290025638025435 
-access_token = "EAACEdEose0cBACKD1ppZBqioB8ENm9IvWZCiRcWZCzRikqNdBJnvDx2drGSh7ZCFNDT4z6AQ517l0GxNqKh3VTcoRwQtdPkSxVKrxlBhAZC3QIXnzPIpK9B7AxVnfsgAzZCLFOFhUNpu0wM7uitOldf6Pz4YA5B5k55qZAolRzFJEFO75Jf2DfLkXmGNZBmaGtgZD"
+access_token = "EAACEdEose0cBACKD1ppZBqioB8ENm9IvWZCiRcWZCzRikqNdBJnvDx2drGSh7ZCFNxDT4z6AQ517l0GxNqKh3VTcoRwQtdPkSxVKrxlBhAZC3QIXnzPIpK9B7AxVnfsgAzZCLFOFhUNpu0wM7uitOldf6Pz4YA5B5k55qZAolRzFJEFO75Jf2DfLkXmGNZBmaGtgZD"
 url = "https://graph.facebook.com/v2.10/{}/members?access_token={}&pretty=0&fields=id%2Cname%2Cgender%2Chometown%2Clocale%2Cpicture&limit=3000"
 
-r = requests.get(url.format(group_id, access_token))
+r = requests.get(url + "/" + group_id + "/" + access_token)
 for group_member in r.json().get("data", []):
 	data = member["name"], member["id"], member["picture"]["data"]["url"]
 	print(data)
 
-## 43 CSVs
+## 44 CSVs
 import csv
 
 stocks = {}
