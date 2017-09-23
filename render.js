@@ -49,7 +49,7 @@ $(document).ready(function () {
         instructions: ['Create a new file if_statments.py', 'Define a float variable "portfolio_returns" that is between 0 and 1', 'Create an if-elif-else statement that prints:', '"My portfolio has very high returns" if the return percent is greater than 12%', '"My portfolio has high returns" if the return percent is greater than 12% but less than 8%', '"My portfolio has bad returns" otherwise'],
         solution: ['<img class = "solution" src="solution_images/diy/diy_3.png" alt="diy3">']
     }, {
-        name: 'Challenge 1 - Hospital Efficiency',
+        name: 'Challenge 1 - Hospital Optimization',
         type: 'challenge',
         instructions: ["You are the operations manager for a major hospital. You're looking to make your nurses more effective by removing the repetitive tasks they have to do. One such task is calculating how much pain medication to administer a patient. The amount of medication a patient should receive is one tablet for every 50 pounds the patient weighs but never more than 3 tablets.", 'Write a program that asks the patient their weight and returns the number of tablets they should take',"(in a real-world scenario you would have an IOT device get the patient's weight and communicate with your program!)"],
         solution: ['<img class = "solution" src="solution_images/challenge/challenge_1.png" alt="challenge1">']
@@ -72,7 +72,7 @@ $(document).ready(function () {
         name: 'Challenge 4 - Buy Buy Buy!',
         type: 'challenge',
         instructions: ['Create a new file in day1 directory called buy_stock.py','Write a program that asks a user for the price of AAPL stock (Apple inc)',"In future lessons we'll show you how your program can get stock information on it's own","The price of AAPL stays around $165 but it's possible to profit off the day-to-day fluctuations",'If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
-        solution: ['<img class = "solution" src="solution_images/challenge/challenge_3.png" alt="challenge4">']
+        solution: ['<img class = "solution" src="solution_images/challenge/challenge_4.png" alt="challenge4">']
     }, {
         name: 'DIY 5 - Word Count',
         type: 'diy',
