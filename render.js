@@ -69,15 +69,15 @@ $(document).ready(function () {
         instructions: ['You own a construction company and need to find a new wood supplier. You have a list of suppliers where each is supplier is a dictionary with values for name, price, and distance', 'Create a new file supply.py in your day3 directory', 'Define a function is_close(supplier) which takes a dictionary and returns if the supplier is less than 10 miles away', 'Define a function is_cheap(supplier) which takes a dictionary and returns if the supplier price is less than $100', 'Define a function get_cheap_close_suppliers(list_of_suppliers) which takes a list of supplier dictionaries and returns a new list of the suppliers which are cheap and close using the functions above'],
         solution: ['<img class = "solution" src="solution_images/challenge/challenge_3.png" alt="challenge3">']
     }, {
-        name: 'Challenge 4 - Buy Buy Buy!',
-        type: 'challenge',
-        instructions: ['Create a new file in day1 directory called buy_stock.py','Write a program that asks a user for the price of AAPL stock (Apple inc)',"In future lessons we'll show you how your program can get stock information on it's own","The price of AAPL stays around $165 but it's possible to profit off the day-to-day fluctuations",'If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
-        solution: ['<img class = "solution" src="solution_images/challenge/challenge_4.png" alt="challenge4">']
-    }, {
         name: 'DIY 5 - Word Count',
         type: 'diy',
         instructions: ['Create a new file in day3 word_count.py', 'Choose one of your files in your data folder and save the file name as a variable', 'Write a function word_count(file_name) that takes a file name, reads the file and returns the total number of words in the file'],
         solution: ['<img class = "solution" src="solution_images/diy/diy_5.png" alt="diy5">']
+    }, {
+        name: 'Challenge 4 - Buy Buy Buy!',
+        type: 'challenge',
+        instructions: ['Create a new file in day1 directory called buy_stock.py','Write a program that asks a user for the price of AAPL stock (Apple inc)',"In future lessons we'll show you how your program can get stock information on it's own","The price of AAPL stays around $165 but it's possible to profit off the day-to-day fluctuations",'If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
+        solution: ['<img class = "solution" src="solution_images/challenge/challenge_4.png" alt="challenge4">']
     }
     ];
 
