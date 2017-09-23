@@ -23,7 +23,7 @@ let addItem = function (itemCount, item) {
 
     //Insert into the DOC
     $('menu ul').append('<li id="' + listID + '" class="">' + title.split("-")[0] + '</li>');
-    $('section').append('<div id="' + divID + '">' + title + '<ul>' + instructions + '</ul><a href="#" onClick = "showSolution()()" class = "solution_button">Show solution!</a>' + solution + '</div>');
+    $('section').append('<div id="' + divID + '">' + title + '<ul>' + instructions + '</ul><a href="#!" onClick = "showSolution()()" class = "solution_button">Show solution!</a>' + solution + '</div>');
 }
 
 $(document).ready(function () {
