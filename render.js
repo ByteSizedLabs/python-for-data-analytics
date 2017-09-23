@@ -49,30 +49,30 @@ $(document).ready(function () {
         instructions: ['Create a new file if_statments.py', 'Define a float variable "portfolio_returns" that is between 0 and 1', 'Create an if-elif-else statement that prints:', '"My portfolio has very high returns" if the return percent is greater than 12%', '"My portfolio has high returns" if the return percent is greater than 12% but less than 8%', '"My portfolio has bad returns" otherwise'],
         solution: ['<img class = "solution" src="solution_images/diy/diy_3.png" alt="diy3">']
     }, {
-        name: 'Challenge 1 - Buy Buy Buy!',
-        type: 'challenge',
-        instructions: ['Create a new file in day1 directory called buy_stock.py','Write a program that asks a user for the price of AAPL stock (Apple inc)','In future lessons we’ll show you how your program can get stock information on its own','The price of AAPL stays around $165 but it’s possible to profit off the day-to-day fluctuations','If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
-        solution: ['<img class = "solution" src="solution_images/challenge/challenge_1.png" alt="challenge1">']
-    }, {
-        name: 'Challenge 2 - Hospital Efficiency',
+        name: 'Challenge 1 - Hospital Efficiency',
         type: 'challenge',
         instructions: ['You are the operations manager for a major hospital. You’re looking to make your nurses more effective by removing the repetitive tasks they have to do. One such task is calculating how much pain medication to administer a patient. The amount of medication a patient should receive is one tablet for every 50 pounds the patient weighs but never more than 3 tablets.', 'Write a program that asks the patient their weight and returns the number of tablets they should take','(in a real-world scenario you would have an IOT device get the patient’s weight and communicate with your program!)'],
-        solution: ['<img class = "solution" src="solution_images/challenge/challenge_2.png" alt="challenge2">']
+        solution: ['<img class = "solution" src="solution_images/challenge/challenge_1.png" alt="challenge1">']
     }, {
         name: 'DIY 4 - Election Analysis',
         type: 'diy',
         instructions: ['Create a new file in day2 election_analytics.py', 'Create a list of 3 presidential candidates from 201', 'Each candidate should be represented as a dictionary with keys for name, money raised, and votes won. (Make them up – doesn’t have to reflect real life)', 'Write a program that calculates and prints out the total number of dollars raised'],
         solution: ['<img class = "solution" src="solution_images/diy/diy_4.png" alt="diy4">']
     }, {
-        name: 'Challenge 3 - Buy Real Estate',
+        name: 'Challenge 2 - Buy Real Estate',
         type: 'challenge',
         instructions: ['You are looking to buy realty in a new neighborhood and want to know if it’s a good investment. To do this you get a list of 5 properties in the neighborhood with their current price as well as their price 10 years ago. You want to calculate how much prices have risen, on average over the last 10 years.', 'Make a list of 5 houses. Each house should be a dictionary with keys for their "old_price" and "new_price"', 'Calculate the average change in price for the 5 houses over the past 10 years'],
-        solution: ['<img class = "solution" src="solution_images/challenge/challenge_3.png" alt="challenge3">']
+        solution: ['<img class = "solution" src="solution_images/challenge/challenge_2.png" alt="challenge2">']
     }, {
-        name: 'Challenge 4 - Supply Me',
+        name: 'Challenge 3 - Supply Me',
         type: 'challenge',
         instructions: ['You own a construction company and need to find a new wood supplier. You have a list of suppliers where each is supplier is a dictionary with values for name, price, and distance', 'Create a new file supply.py in your day3 directory', 'Define a function is_close(supplier) which takes a dictionary and returns if the supplier is less than 10 miles away', 'Define a function is_cheap(supplier) which takes a dictionary and returns if the supplier price is less than $100', 'Define a function get_cheap_close_suppliers(list_of_suppliers) which takes a list of supplier dictionaries and returns a new list of the suppliers which are cheap and close using the functions above'],
-        solution: ['<img class = "solution" src="solution_images/challenge/challenge_4.png" alt="challenge4">']
+        solution: ['<img class = "solution" src="solution_images/challenge/challenge_3.png" alt="challenge3">']
+    }, {
+        name: 'Challenge 4 - Buy Buy Buy!',
+        type: 'challenge',
+        instructions: ['Create a new file in day1 directory called buy_stock.py','Write a program that asks a user for the price of AAPL stock (Apple inc)','In future lessons we’ll show you how your program can get stock information on its own','The price of AAPL stays around $165 but it’s possible to profit off the day-to-day fluctuations','If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
+        solution: ['<img class = "solution" src="solution_images/challenge/challenge_3.png" alt="challenge4">']
     }, {
         name: 'DIY 5 - Word Count',
         type: 'diy',
