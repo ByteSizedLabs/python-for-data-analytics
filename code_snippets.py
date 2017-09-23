@@ -329,6 +329,16 @@ for number in numbers:
 even_numbers = [number for number in numbers if number % 2 == 0]
 squares_of_even_numbers = [even_number ** 2 for even_number in even_numbers]
 
+## 34 Sub-Lists
+numbers = [0,1,2,3,4,5,6,7,8]
+
+numbers_after_2 = numbers[3:] #[3,4,5 ... 8]
+numbers_before_6 = numbers[:6] #[0,1 ... 5]
+numbers_from_4_to_7 = numbers[4:8] #[4, 5 ... 8]
+even_numbers = numbers[::2]
+odd_numbers = numbers[1::2]
+reversed_list = numbers[::-1]
+
 ## 34 while loop
 employees = ["Jake", "John", "Jacob", "Jeff", "Jeffry"]
 counter = 0
