@@ -1,5 +1,5 @@
-Ticker Symbol,Company Name,Closing Price,Opening Price
-FB,Facebook,171.69,173.51
-GOOGL,Alphabet,947.45,945.21
-AMZN,Amazon,971.31,969
-NFLX,Netflix,185.82,189.21
+Ticker Symbol,Company Name,Closing Price,Opening Price,Last Year High,Last Year Low
+FB,Facebook,171.69,173.51,190.21,169.1
+GOOGL,Alphabet,947.45,945.21,940.8,911.77
+AMZN,Amazon,971.31,969,985.26,912.35
+NFLX,Netflix,185.82,189.21,160.88,95.21
