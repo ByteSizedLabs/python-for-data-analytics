@@ -76,7 +76,7 @@ $(document).ready(function () {
     }, {
         name: 'Challenge 4 - Buy Buy Buy!',
         type: 'challenge',
-        instructions: ['Create a new file in day3 directory called buy_stock.py', 'In your data folder there is a csv file stocks.csv with columns for Stock Ticker, Company Name, Closing Price, Opening Price, Last Year High, and Last Year Low', 'Import the csv module and read stocks.csv', 'Create a list of dictionaries where each dictionary represents a stock in the csv. The dictionary should have fields for Stock ticker, Opening price, Last year high, and Last year low', 'Using the list of dictionaries, create a list recommended_buys of stock tickers to buy', 'Using the list of dictionaries, create a list recommended_sells of stock tickers to sell']
+        instructions: ['Create a new file in day3 directory called buy_stock.py', 'In your data folder there is a csv file stocks.csv with columns for Stock Ticker, Company Name, Closing Price, Opening Price, Last Year High, and Last Year Low', 'Import the csv module and read stocks.csv', 'Create a list of dictionaries where each dictionary represents a stock in the csv. The dictionary should have fields for Stock ticker, Opening price, Last year high, and Last year low', 'Using the list of dictionaries, create a list recommended_buys of stock tickers to buy', 'Using the list of dictionaries, create a list recommended_sells of stock tickers to sell'],
         solution: ['<img class = "solution" src="solution_images/challenge/challenge_4.png" alt="challenge4">']
     }
     ];
