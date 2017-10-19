@@ -76,19 +76,11 @@ $(document).ready(function () {
     }, {
         name: 'Challenge 4 - Buy Buy Buy!',
         type: 'challenge',
-        instructions: ['Create a new file in day1 directory called buy_stock.py','Write a program that asks a user for the price of AAPL stock (Apple inc)',"In future lessons we'll show you how your program can get stock information on it's own","The price of AAPL stays around $165 but it's possible to profit off the day-to-day fluctuations",'If the price is above $170 tell the user to sell','If the price is below $160, tell the user to buy','Otherwise tell the user to hold'],
+        instructions: ['Create a new file in day3 directory called buy_stock.py', 'In your data folder there is a csv file stocks.csv with columns for Stock Ticker, Company Name, Closing Price, Opening Price, Last Year High, and Last Year Low', 'Import the csv module and read stocks.csv', 'Create a list of dictionaries where each dictionary represents a stock in the csv. The dictionary should have fields for Stock ticker, Opening price, Last year high, and Last year low', 'Using the list of dictionaries, create a list recommended_buys of stock tickers to buy', 'Using the list of dictionaries, create a list recommended_sells of stock tickers to sell']
         solution: ['<img class = "solution" src="solution_images/challenge/challenge_4.png" alt="challenge4">']
     }
     ];
 
-	/*
-	,{
-		name:'',
-		type: 'diy',
-        instructions: []
-        solution:[]
-	}
-	*/
 
     //Add the DIY and Challenges
     let diyCount = 1, chalCount = 0, downloadCount = 1;
