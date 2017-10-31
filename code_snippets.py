@@ -192,11 +192,8 @@ is_7_a_winning_number = 7 in winning_lottery_numbers
 
 print(is_7_a_winning_number) # False
 
-## 20 More lists
-common_webistes = ["Google", "Amazon", "Facebook", "NYTimes", "Ebay", "Netflix", "Youtube"]
-amazon_to_ebay = common_webistes[1:5]
-front_to_facebook = common_webistes[:3]
-nytimes_to_end = common_webistes[3:]
+
+
 
 
 ## 21 - Tuples
