@@ -283,13 +283,13 @@ for letter in "Python":
 # n
 
 ## 29 For Loop range
-for number in range(0, 5):
+for number in range(0, 6):
 	print(number * 2)
 # 0
-# 1
 # 2
-# 3
 # 4
+# 8
+# 10
 
 ## 30 For Loop list
 cities_ive_been_to = ["Philadelphia", "Montreal", "New York", "Tampa", "Bangkok"]
